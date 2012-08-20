@@ -57,14 +57,14 @@ table {
 @font-face
 {
 font-family: appleberry;
-src: url('appleberry_with_cyrillic-webfont.ttf')
-   ,url('appleberry_with_cyrillic-webfont.eot'); /* IE9 */
+src: url('fonts/appleberry_with_cyrillic-webfont.ttf')
+   ,url('fonts/appleberry_with_cyrillic-webfont.eot'); /* IE9 */
 }
 
 
 
 body{
-	background: url('images/background.jpg')  center top;
+	background: url('../../images/background.jpg')  center top;
 	
 }
 
@@ -197,14 +197,14 @@ ul{
 	margin: 25px 0 75px 0;
 }
 .facebook {
-	background: url('images/facebook.jpg') no-repeat;
+	background: url('../../images/facebook.jpg') no-repeat;
 	height: 130px;
 	width: 130px;
 	display: block;
 	box-shadow: 2px 2px 3px 3px #333;	
 }
 .twitter {
-	background: url('images/twitter.jpg') no-repeat;
+	background: url('../../images/twitter.jpg') no-repeat;
 	height: 130px;
 	width: 130px;
 	display: block;
@@ -213,7 +213,7 @@ ul{
 }
 
 .gmail {
-	background: url('images/google.jpg') no-repeat;
+	background: url('../../images/google.jpg') no-repeat;
 	height: 130px;
 	width: 130px;
 	display: block;
