@@ -1,2 +1,0 @@
-mallorystandridge.github.com
-============================
