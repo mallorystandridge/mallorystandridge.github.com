@@ -62,6 +62,7 @@ src: url('../fonts/mission-script-webfont.ttf')
 body{
 	background: url('../images/background.jpg') no-repeat left top;
 	background-attachment: fixed;
+	background-size:cover;
 	background-color: #91F2CA;
 }
 #content{
