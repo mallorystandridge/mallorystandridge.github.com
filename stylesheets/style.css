@@ -127,8 +127,8 @@ ul li{
 		background-position:right;
 	}
 	#content{
-		background-position: center;
-		background-size: 50px;
+		margin: 0 auto;
+		width: 150px;
 	}
 }
 
