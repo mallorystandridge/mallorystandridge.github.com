@@ -126,6 +126,10 @@ ul li{
 	body{
 		background-position:right;
 	}
+	#content{
+		position: center;
+		width: 460px;
+	}
 }
 
 
