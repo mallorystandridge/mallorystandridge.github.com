@@ -131,7 +131,7 @@ ul li{
 	}
 	h1{
 		font-size: 50px;
-		padding: 0;
+		padding: 10px 0;
 		text-align: center;
 	}
 	p{
@@ -139,7 +139,10 @@ ul li{
 		padding: 0 10px 10px 10px;
 		font-size: 14px;
 	}
-	
+	#contact{
+		text-align: center;
+		margin: 0;
+	}
 }
 
 
