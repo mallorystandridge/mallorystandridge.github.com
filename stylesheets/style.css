@@ -127,8 +127,8 @@ ul li{
 		background-position:right;
 	}
 	#content{
-		position: center;
-		width: 50%;
+		background-position: center;
+		width: 40%;
 	}
 }
 
