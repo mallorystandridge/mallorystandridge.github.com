@@ -79,7 +79,8 @@ body{
 h1{
 	font: 54pt 'mission', Helvetica, Geneva, sans-serif;
 	color: #fff;
-	padding: 20px 0 20px 40px;
+	padding: 25px 20px; 
+	text-align: center;
 }
 h2{
 	color: #570A0A;
@@ -89,7 +90,7 @@ h2{
 p{
 	color: #5C5863;
  	word-wrap: break-word;
- 	padding: 0 0 20px 40px;
+ 	padding: 0 40px 20px 40px;
  	font: bold 14pt "Lucida Sans Unicode", "Lucida Grande", sans-serif;
  }
 a{
@@ -129,19 +130,25 @@ ul li{
 	body{
 		background-position:right;
 	}
-	#content{
-		margin: 20px auto;
-		width: 85%;
-	}
 	h1{
 		font-size: 50px;
 		padding: 10px 0;
-		text-align: center;
 	}
 	p{
 		word-wrap: break-word;
 		padding: 0 10px 10px 10px;
 		font-size: 14px;
+	}
+}
+
+@media (max-width: 680px){
+	#content{
+		margin: 20px auto;
+		width: 85%;
+	}
+	h1{
+		font-size: 80px;
+		text-align: center;
 	}
 	#contact{
 		text-align: center;
@@ -149,7 +156,7 @@ ul li{
 	}
 }
 
-@media (max-width: 1060px){
+@media (max-width: 1260px){
 	body{
 		background-position: right;
 	}
