@@ -52,6 +52,10 @@ table {
 
 /* @end */
 
+
+/* I made it myself !!!!!!!!!!!!! */
+
+
 @font-face
 {
 font-family: mission;
@@ -64,6 +68,7 @@ body{
 	background-attachment: fixed;
 	background-size:cover;
 	background-color: #91F2CA;
+	
 }
 #content{
 	background-color: rgba(145, 242, 202, 0.8);
@@ -74,7 +79,6 @@ body{
 h1{
 	font: 54pt 'mission', Helvetica, Geneva, sans-serif;
 	color: #fff;
-	font-weight: 500;
 	padding: 20px 0 20px 40px;
 }
 h2{
@@ -145,6 +149,11 @@ ul li{
 	}
 }
 
+@media (max-width: 1060px){
+	body{
+		background-position: right;
+	}
+}
 
 
 
