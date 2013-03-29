@@ -5,7 +5,7 @@ $(document).ready(function(){
 		maxHeight: '90%'
 	});
 	
-	$("#seemywork").click(function(event){
+	$("#seeMyWork").click(function(event){
 		event.preventDefault();
 		$("#examples a:first").click();
 	});

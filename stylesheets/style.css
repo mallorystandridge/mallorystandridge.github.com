@@ -127,9 +127,6 @@ ul li{
 }
 
 @media (max-width: 480px){
-	/*body{
-		background-position:right;
-	}*/
 	h1{
 		font-size: 50px;
 		padding: 10px 0;
