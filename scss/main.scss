@@ -1,0 +1,364 @@
+/**** Font ****/
+@font-face{
+font-family: Oswald;
+	src: url('../fonts/Oswald-Regular.ttf'); 
+}
+
+/**** Variables ****/
+$font-slab: helvetica, serif;
+$font-arial: arial, helvetica, sans-serif;
+$font-oswald: 'Oswald', sans-serif;
+$primary-color: black;
+$highlight-color: #00ccff;
+
+/**** Base ****/
+body {
+	background: white;
+	font-family: $font-slab;
+}
+
+h1 {
+	font-family: $font-oswald;
+	line-height: 1.25;
+	font-weight: 300;
+	margin: 0;
+}
+
+h2 {
+	font-family: $font-oswald;
+	font-size: 30px;
+}
+
+h3 {
+	font-family: $font-oswald;
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-top: 10px;
+}
+
+a {
+	color: $highlight-color;
+	&:hover {
+		color: $highlight-color;
+		text-decoration: underline;
+	}
+}
+
+p {
+	font-family: $font-arial;
+}
+
+hr {
+	border-color: $primary-color;
+}
+
+blockquote {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	color: $primary-color;
+	font-family: $font-arial;
+	font-size: 14px;
+	line-height: 1.4;
+}
+ 
+.btn,
+input[type="submit"] {
+	border: 3px solid black;
+	background: white;
+	color: black;
+	border-radius: 8px;
+	font-family: $font-slab;
+	font-size: 20px;
+	float: right;
+	padding: 10px 15px;
+	&:hover {
+		background: black;
+		color: white;
+		text-decoration: none;
+	}
+}
+
+form {
+	fieldset {
+		border: 0;
+		padding: 0;
+		margin: 0;
+	}
+	
+	input[type="email"],
+	input[type="text"],
+	textarea {
+		border: 3px solid black;
+		border-radius: 8px;
+		height: 40px;
+		box-shadow: none;
+		margin-bottom: 15px;
+		&.error {
+			border-color: red;
+		}
+	}
+	
+	textarea {
+		height: 200px;
+		resize: vertical;
+	}
+}
+
+/***** Header *****/
+header {
+	margin-bottom: 40px;
+	background: black;
+}
+
+.logo {
+	float: left;
+}
+
+#mobile {
+	display: none;
+	float:right;
+	margin: 35px 15px 0 0;
+	color: white;
+	text-transform: uppercase;
+	font-size: 15px;
+	@media (max-width: 620px) {
+		display: block;
+	}
+}
+
+.navigation {
+	float: right;
+	list-style-type: none;
+	margin: 15px 0 10px 0;
+	font-size: 14px;
+	text-align: right;
+}
+
+.nav-list {
+	display: inline-block;
+	margin: 20px 10px;
+	text-transform: uppercase;
+}
+
+.nav-link {
+	color: white;
+	&:hover {  
+		color: $highlight-color;
+		text-decoration: none;
+	}
+}
+
+@media (max-width: 620px) {
+	.navigation {
+		display: none;
+		width: 100%;
+		text-align: left;
+		border-top: 1px solid white;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	
+	.nav-list {
+		display: block;
+		border-bottom: 1px solid white;
+		margin: 0;
+	}
+	
+	.nav-link {
+		padding: 10px;
+		display: block;
+		width: 100%;
+		&:hover {
+			background: #eee;
+		}
+	}
+}
+
+
+.hire {
+	display: inline-block;
+	margin: 5px;
+	text-align: center;
+	background-color: $highlight-color;
+	border-radius: 50%;
+	padding: 21px 23px;
+	line-height: 1.25;
+	font-size: 16px;
+	font-weight: 500;
+	color: white;
+	transform: rotate(-30deg);
+	&:hover {
+		color: black;
+		text-decoration: none;
+		background-color: white;
+	}
+}
+
+.tag-line {
+	display: inline-block;
+	vertical-align: middle;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 12px;
+	color: white;
+}
+
+/***** home content ****/
+.main-hero {
+	display: block;
+	margin: 0 auto;
+}
+
+.my-stats {
+	list-style-type: none;
+	margin: 0;
+	border-bottom: 1px solid $primary-color;
+	padding-bottom: 25px;
+	
+	li {
+		font-family: $font-oswald;
+		font-size: 70px;
+		line-height: 1.1;
+		span { 
+			font-family: $font-slab;
+			font-size: 18px;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.signature {
+	font-family: $font-arial;
+	font-size: 12px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.websites {
+	display: inline-block;
+	margin-bottom: 10px;
+	img:hover {
+		opacity: 0.3;
+	}
+}
+
+/******* footer ******/
+footer {
+	background: black;
+	margin-top: 45px;
+	padding: 20px 10px;
+	text-align: right;
+	color: white;
+	p {
+		color: white;
+		font-family: $font-oswald;
+		text-transform: uppercase;
+		margin-bottom: 0;
+		font-size: 1.125rem;
+	}
+}
+
+.main {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -120px; 
+}
+
+.main:after {
+  content: "";
+  display: block;
+}
+
+footer, .main:after {
+  height: 120px; 
+}
+
+
+/***** Resume *****/
+.download {
+	font-weight: 600;
+	float: right;
+	text-decoration: underline;
+}
+.resume {
+	.contact {
+		margin-bottom: 25px;
+		h3 {
+			text-decoration: none;
+			text-transform: none;
+		}
+	}
+	h3 {
+		font-family: $font-arial;
+		margin: 0;
+	    font-size: 20px;
+	    font-weight: 600;
+		text-decoration: underline;
+	}
+	h4 {
+		font-family: $font-arial;
+		margin: 0;
+		font-size: 18px;
+		font-weight: 600;
+	}
+	h5 {
+		font-family: $font-arial;
+		margin: 0;
+	    font-size: 16px;
+	}
+}
+
+/***** Up To *****/
+.legend {
+	text-align: center;
+	p {
+		margin-bottom: 0;
+	}
+}
+
+.work {
+	img {
+		margin-bottom: 40px;
+	}
+}
+
+.case-study {
+	border-bottom: 1px solid $primary-color;
+	margin-bottom: 20px;
+	padding: 10px;
+	display: block;
+	img {
+		max-height: 224px;
+		@media (max-width: 640px){
+			max-height: 100%;
+		}
+	}
+	
+	&:hover {
+		text-decoration: none;
+		img{
+			opacity: 0.3;
+		}
+		h2 {
+			color: $highlight-color;
+		}
+	}
+}
+
+.mail {
+	display: block;
+	margin-top: 10px;
+}
+
+.reference {
+	margin-top: 100px;
+}
+
+.disclaimer {
+	display: block;
+	font-size: 14px;
+	font-style: italic;
+	margin-bottom: 20px;
+}
+

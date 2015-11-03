@@ -1,0 +1,91 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mallory | Hire Me!</title>
+	<link rel="icon" type="image/png" href="images/fav.png" />
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+	
+    <script src="js/vendor/angular.min.js"></script>
+	<script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
+	
+
+	
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	
+  </head>
+ 
+  <body ng-app="mySite">
+	  <header>
+  		<div class="row">
+			<div class="logo">
+			  <a href="mailto:mallorystandridge@gmail.com" class="hire">HIRE<br> ME!</a>
+			  <p class="tag-line">#Imadethat</p>
+			</div>
+  		  	<ul class="navigation">
+  		  		  <li><a href="index.html">Home</a></li>
+  		  		  <li><a href="upto.html">What I've been up to</a></li>
+  		  		  <li><a href="resume.html">Resume</a></li>
+  		  		  <li><a href="contact.html">Contact Me</a></li>
+  		  	</ul>  	  			  
+  		</div>
+	</header>
+	
+	<div class="main">
+		<div class="row">
+			<div class="medium-8 small-centered columns">
+				<form action="https://vivid-torch-1205.firebaseio.com/" method="post">
+			
+					<h2>Talk to me</h2>
+					<fieldset>
+	  					<input class="error" type="text" name="contact_name" placeholder="Name">
+					</fieldset>
+	
+					<fieldset>
+	  					<input type="email" name="contact_email" placeholder="Name@Email.com">
+					</fieldset>
+	
+					<fieldset>
+  	  					<textarea name="contact_message" placeholder="Message..."></textarea>
+					</fieldset>
+	
+					<input class="btn" type="submit" value="Submit">
+
+				</form>
+						
+				<div class="contact-gracias">
+					<h3>Thank you for taking the time to reach out to me.</h3>
+					<h3>- Mallory</h3>
+					<iframe class="contact_video" src="https://www.youtube.com/embed/Dyxr--0hHWU?start=2" frameborder="0" allowfullscreen></iframe>
+				</div>
+				
+			</div>
+		</div>
+			
+	</div><!-- /Main -->
+	
+    <footer>
+		<div class="row">
+			<p>Mallory Standridge</p>
+			<p>Web Developer</p>
+			<a href="mailto:mallorystandridge@gmail.com">Contact Me</a>
+		</div>
+	</footer>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controller/MainController.js"></script>
+    
+    <!-- Directives -->
+    <script src="js/directives/buttercup.js"></script>
+	
+	
+  </body>
+</html>

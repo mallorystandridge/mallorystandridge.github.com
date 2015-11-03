@@ -1,0 +1,351 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<!-- NOT a template! Made by me, the name is Mallory :)  -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mallory | Hire Me!</title>
+	<link rel="icon" type="image/png" href="images/fav.png" />
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+   
+    <script src="js/vendor/angular.min.js"></script>
+	<script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
+  </head>
+  <body  ng-app="mySite">
+	<header>
+		<div class="row">
+			<div class="logo">
+			  <a href="mailto:mallorystandridge@gmail.com" class="hire">HIRE<br> ME!</a>
+			  <p class="tag-line">#Imadethat</p>
+			</div>
+		  	<ul class="navigation">
+		  		  <li><a href="index.html">Home</a></li>
+		  		  <li><a href="upto.html">What I've been up to</a></li>
+		  		  <li><a href="resume.html">Resume</a></li>
+		  		  <li><a href="interview.html">Interview Me</a></li>
+		  	</ul>  	  			  
+		</div>
+	</header>
+	
+	<div class="main">
+	
+	<div class="row">
+		<div class="medium-12 columns">
+			<div class="legend">
+				<h1>So you like what you see so far? Heres some questions you might want to ask me.</h1> 
+				<p>Still have questions drop <a href="mailto:mallorystandridge@gmail.com">me a line</a>.</p>
+				<hr>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="medium-6 columns">
+			<h3>General Questions</h3>
+			<hr>
+			<ul>
+				<li>What did you learn yesterday/this week?</li>
+				<li>What excites or interests you about coding?</li>
+				<li>What is a recent technical challenge you experienced and how did you solve it?</li>
+				<li>What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?</li>
+				<li>Talk about your preferred development environment.</li>
+				<li>Which version control systems are you familiar with?</li>
+				<li>Can you describe your workflow when you create a web page?</li>
+				<li>If you have 5 different stylesheets, how would you best integrate them into the site?</li>
+				<li>Can you describe the difference between progressive enhancement and graceful degradation?</li>
+				<li>How would you optimize a website's assets/resources?</li>
+				<li>How many resources will a browser download from a given domain at a time?</li>
+				<li>What are the exceptions?</li>
+				<li>Name 3 ways to decrease page load (perceived or actual load time).</li>
+				<li>If you jumped on a project and they used tabs and you used spaces, what would you do?</li>
+				<li>Describe how you would create a simple slideshow page.</li>
+				<li>If you could master one technology this year, what would it be?</li>
+				<li>Explain the importance of standards and standards bodies.</li>
+				<li>What is Flash of Unstyled Content? How do you avoid FOUC?</li>
+				<li>Explain what ARIA and screenreaders are, and how to make a website accessible.</li>
+				<li>Explain some of the pros and cons for CSS animations versus JavaScript animations.</li>
+				<li>What does CORS stand for and what issue does it address?</li>
+			</ul>
+		</div>
+		
+		<div class="medium-6 columns">	
+			<h3>HTML Questions</h3>
+			<hr>
+			<ul>
+				<li>What does a doctype do?</li>
+				<div class="asn">
+					<p>Specifies the rules for the markup language, so that the browsers render the content correctly.</p>
+				 </div>
+					
+				<li>What's the difference between standards mode and quirks mode?</li>
+				<div class="asn">
+					<p>There where legacy sites that existed before the W3C standards, quirks mode was used to keep old sites from breaking in newer browsers. </p>
+				</div>
+				
+				<li>Are there any problems with serving pages as application/xhtml+xml?</li>
+				<div class="asn">  </div>
+				
+				<li>How do you serve a page with content in multiple languages?</li>
+				<div class="asn">
+					<p>Your browser is configured to send accept-language headers, the web server can use those to determine your preferred language and send the appropriate document. Its it's called content negotiation</p>
+				</div>
+				
+				<li>What kind of things must you be wary of when design or developing for multilingual sites?</li>
+				<div class="asn">
+					<ol>
+						<li>text direction</li>
+						<li>bi-directional text</li>
+						<li>different numbering systems</li>
+						<li>sorting alphabetically</li>
+						<li>how colors are perceived across different cultures</li>
+					</ol>
+					<p>You can see a lot more here <a href="https://en.wikipedia.org/wiki/Internationalization_and_localization" target="_blank"> https://en.wikipedia.org/</a></p>
+				</div>
+					
+				<li>What are data-attributes good for?</li>
+				<div class="asn">
+					<p>They are pretty good for adding extra information to an element say like for js hooks that have no visual representation.</p>
+				</div>
+				
+				<li>Consider HTML5 as an open web platform. What are the building blocks of HTML5?</li>
+				<div class="asn">
+					<ol>
+						<li>< header ></li>
+						<li>< article ></li>
+						<li>< aside ></li>
+						<li>< nav ></li>
+						<li>canvas</li>
+						<li>new form elements like datepicker</li>
+						<li>audio</li>
+						<li>video</li>
+					</ol>
+				</div>
+				
+				<li>Describe the difference between a cookie, sessionStorage and localStorage.</li>
+				<div class="asn">
+					<p><strong>cookie- </strong> works without js, the user can clear cookies or the cookie administrator chooses when the cookie is to expire. </p>
+					<p><strong>sessionStorage- </strong> only works with js, ends when ever the user close the tab.</p>
+					<p><strong>localStorage-  </strong> only works with js, the user has to clear localStorage.</p>
+				</div>
+				
+				<li>Describe the difference between < script >, < script async > and < script defer >.</li>
+				<div class="asn">
+					<p><strong> < script >- </strong> blocks the html parser while the script downloads and executes  </p>
+					<p><strong> < script async >- </strong> downloads without stoping the parser, but it does stop the parser when its finished downloading so it can run. Risking blocking rendering. </p>
+					<p><strong>< script defer >-  </strong> doesn't run till all of the html is parsed and rendered.</p>
+				</div>
+				
+				<li>Why is it generally a good idea to position CSS <link>s between < head>< /head> and JS < script>s just before < /body >? Do you know any exceptions?</li>
+				<div class="asn">
+					<p>You would general want the layout with the css to render first and then js. If the js is in the header the user would have to wait for the js to fully load before rendering the layout.</p>
+				</div>
+				
+				<li>What is progressive rendering?</li>
+				<div class="asn">
+					<p>Instead of giving the user a whole page at once, progressive rendering- renders sections of the content at a time.</p>
+				</div>
+				
+				<li>Have you used different HTML templating languages before?</li>
+				<div class="asn">
+					<p>I have use markdown</p>
+				</div>
+				
+			</ul>
+		</div>
+		<div class="medium-6 columns">
+			<h3>CSS Questions</h3>
+			<hr>
+			<ul>
+				<li>What is the difference between classes and ID's in CSS?</li>
+				<div class="asn">
+					<p>Elements can have multiple class but only one ID. </p>
+				</div>
+				
+				<li>What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?</li>
+				<div class="asn">
+					<p>Resetting would be like setting everything to zero. Normalizing would be like setting everything to a standardize values you are use to. I would use Normalize because keeps normal and useful defaults.</p>
+				</div>
+				
+				<li>Describe Floats and how they work.</li>
+				<div class="asn">
+					<p>A float is a CSS positioning property. They allow for elements to be stacked side by side and not cause any reflow</p>
+				</div>
+				
+				<li>Describe z-index and how stacking context is formed.</li>
+					<div class="asn">
+						<p>The z-index property specifies the stacking order of an element.</p>
+						<p>A stacking context is formed...</p>
+						<ul>
+							<li> the root element (HTML), positioned (absolutely or relatively) with a z-index value other than "auto",</li>
+							<li>a flex item with a z-index value other than "auto",that is the parent element display: flex|inline-flex,</li>
+							<li>elements with a transform value other than "none",</li>
+							<li>elements with a mix-blend-mode value other than "normal",</li>
+							<li>elements with a filter value other than "none",</li>
+							<li>elements with isolation set to "isolate",</li>
+						</ul>
+					</div>
+
+					
+					
+				<li>Describe BFC(Block Formatting Context) and how it works.</li>
+				<div class="asn">
+					<p>It is the region in which the layout of block boxes occurs and in which floats interact with each other.</p>
+				</div>
+				
+				
+				<li>What are the various clearing techniques and which is appropriate for what context?</li>
+				<li>Explain CSS sprites, and how you would implement them on a page or site.</li>
+				<li>What are your favourite image replacement techniques and which do you use when?</li>
+				<li>How would you approach fixing browser-specific styling issues?</li>
+				<li>How do you serve your pages for feature-constrained browsers?</li>
+				<li>What techniques/processes do you use?</li>
+				<li>What are the different ways to visually hide content (and make it available only for screen readers)?</li>
+				<li>Have you ever used a grid system, and if so, what do you prefer?</li>
+				<div class="asn">
+					<p>I use Foundation the most, but I don't mind Bootstrap at all and have used it a bit.</p>
+				</div>
+				<li>Have you used or implemented media queries or mobile specific layouts/CSS?</li>
+				<div class="asn">
+					<p>Yes, all the sites you have seen under <a href="upto.hml">What I've been up to</a> have media queries and a few sites I did where mobile specific.</p>
+				</div>
+				<li>Are you familiar with styling SVG?</li>
+				<li>How do you optimize your webpages for print?</li>
+				<div class="asn">
+					<ul>
+						<li>Create a stylesheet just for print</li>
+						<li>Try to avoid tables in your mark up</li>
+						<li>Don't be afraid to display none</li>
+						<li>Size your page for print, don't want it running off the sides!</li>
+						<li>Testing is the best thing you can do, print and just keep making tweaks.</li>
+					</ul>
+				</div>
+				
+				<li>What are some of the "gotchas" for writing efficient CSS?</li>
+				<li>What are the advantages/disadvantages of using CSS preprocessors?</li>
+				<li>Describe what you like and dislike about the CSS preprocessors you have used.</li>
+				<li>How would you implement a web design comp that uses non-standard fonts?</li>
+				<li>Explain how a browser determines what elements match a CSS selector.</li>
+				<li>Describe pseudo-elements and discuss what they are used for.</li>
+				<li>Explain your understanding of the box model and how you would tell the browser in CSS to render your layout in different box models.</li>
+				<li>What does * { box-sizing: border-box; } do? What are its advantages?</li>
+				<li>List as many values for the display property that you can remember.</li>
+				<li>What's the difference between inline and inline-block?</li>
+				<li>What's the difference between a relative, fixed, absolute and statically positioned element?</li>
+				<li>The 'C' in CSS stands for Cascading. How is priority determined in assigning styles (a few examples)? How can you use this system to your advantage?</li>
+				<div class="asn">
+					<p>
+					</p>
+				</div>
+				<li>What existing CSS frameworks have you used locally, or in production? How would you change/improve them?</li>
+				<li>Have you played around with the new CSS Flexbox or Grid specs?</li>
+				<li>How is responsive design different from adaptive design?</li>
+				<div class="asn">
+					<p>My understanding is they are both the same, responsive design was called bulletproof design first, then adaptive, then responsive.</p>
+				</div>
+				<li>Have you ever worked with retina graphics? If so, when and what techniques did you use?</li>
+				<li>Is there any reason you'd want to use translate() instead of absolute positioning, or vice-versa? And why?</li>
+			</ul>
+		</div>
+		<div class="medium-6 columns">	
+			<h3>JS Questions</h3>
+			<hr>
+			<ul>
+				<li>Explain event delegation</li>
+				<div class="asn">
+					<p>Add a single event handler to a parent element in order to avoid having to addevent handlers to multiple child elements.</p>
+				</div>
+				<li>Explain how this works in JavaScript</li>
+				<li>Explain how prototypal inheritance works</li>
+				<li>What do you think of AMD vs CommonJS?</li>
+				<li>Explain why the following doesn't work as an IIFE: function foo(){ }();.</li>	
+				<li>What needs to be changed to properly make it an IIFE?</li>
+				<li>What's the difference between a variable that is: null, undefined or undeclared?</li>
+				<div class="asn">
+					<ul>
+						<li>null or an "empty" value, i.e. no object value is present.</li>
+						<li>undefined property indicates that a variable has not been assigned a value.</li>
+						<li>A variable is undeclared when it does not use the var keyword. It gets created on the global object</li>
+					</ul>
+				</div>
+				<li>How would you go about checking for any of these states?</li>
+				<li>What is a closure, and how/why would you use one?</li>
+				<div class="asn">
+					<p>Closures are functions that refer to independent (free) variables. In other words, the function defined in the closure 'remembers' the environment in which it was created.</p>
+				</div>
+				<li>What's a typical use case for anonymous functions?</li>
+				<li>How do you organize your code? (module pattern, classical inheritance?)</li>
+				<li>Difference between: function Person(){}, var person = Person(), and var person = new Person()?</li>
+				<li>What's the difference between .call and .apply?</li>
+				<div class="asn">
+					<p>call() accepts an argument list</p>
+					<p>apply() accepts a single array of arguments</p>
+				</div>
+				<li>Explain Function.prototype.bind.</li>
+				<li>When would you use document.write()?</li>
+				<li>What's the difference between feature detection, feature inference, and using the UA string?</li>
+				<li>Explain AJAX in as much detail as possible.</li>
+				<li>Explain how JSONP works (and how it's not really AJAX).</li>
+				<li>Have you ever used JavaScript templating?</li>
+				<li>If so, what libraries have you used?</li>
+				<li>Explain "hoisting".</li>
+				<div class="asn">
+					<p>Variable declaration are moved to the top of the function or global code</p>
+				</div>
+				<li>Describe event bubbling.</li>
+				<li>What's the difference between an "attribute" and a "property"?</li>
+				<li>Why is extending built-in JavaScript objects not a good idea?</li>
+				<li>Difference between document load event and document ready event?</li>
+				<li>What is the difference between == and ===?</li>
+				<li>Explain the same-origin policy with regards to JavaScript.</li>
+				<li>Make this work: duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]</li>
+				<li>Why is it called a Ternary expression, what does the word "Ternary" indicate?</li>
+				<li>What is "use strict";? what are the advantages and disadvantages to using it?</li>
+				<li>Create a for loop that iterates up to 100 while outputting "fizz" at multiples of 3, "buzz" at multiples of 5 and "fizzbuzz" at multiples of 3 and 5</li>
+				
+				<li>Why is it, in general, a good idea to leave the global scope of a website as-is and never touch it?</li>
+				<li>Why would you use something like the load event? Does this event have disadvantages? Do you know any alternatives, and why would you use those?</li>
+				<li>Explain what a single page app is and how to make one SEO-friendly.</li>
+				<li>What is the extent of your experience with Promises and/or their polyfills?</li>
+				<li>What are the pros and cons of using Promises instead of callbacks?</li>
+				<li>What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?</li>
+				<li>What tools and techniques do you use debugging JavaScript code?</li>
+				<li>What language constructions do you use for iterating over object properties and array items?</li>
+				<li>Explain the difference between mutable and immutable objects.</li>
+				<li>What is an example of an immutable object in JavaScript?</li>
+				<li>What are the pros and cons of immutability?</li>
+				<li>How can you achieve immutability in your own code?</li>
+				<li>Explain the difference between synchronous and asynchronous functions.</li>
+				<li>What is event loop?</li>
+				<li>What is the difference between call stack and task queue?</li>
+			</ul>
+		</div>
+					
+		</div>
+	</div>
+</div>
+ 
+    <footer>
+		<div class="row">
+			<p>Mallory Standridge</p>
+			<p>Web Developer</p>
+			<a href="mailto:mallorystandridge@gmail.com">Contact Me</a>
+		</div>
+	</footer>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+	
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controller/MainController.js"></script>
+    
+    <!-- Directives -->
+    <script src="js/directives/buttercup.js"></script>
+	
+	
+	
+  </body>
+</html>

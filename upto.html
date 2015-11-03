@@ -1,0 +1,163 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mallory | Hire Me!</title>
+	<link rel="icon" type="image/png" href="images/fav.png" />
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+	
+	<!-- angular -->
+    <script src="js/vendor/angular.min.js"></script>
+	<script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
+  </head>
+ 
+  <body ng-app="mySite">
+	<header>
+		<div class="row">
+			<div class="logo">
+			  <a href="index.html" class="hire">HIRE<br> ME!</a>
+			  <p class="tag-line">#Imadethat</p>
+			</div>
+		  	<ul class="navigation">
+		  		  <li><a href="index.html">Home</a></li>
+		  		  <li><a href="upto.html">What I've been up to</a></li>
+		  		  <li><a href="resume.html">Resume</a></li>
+		  	</ul>  	  			  
+		</div>
+	</header>
+	
+	<div class="main">
+  		<div class="row">
+  			<div class="medium-12 columns">
+				<div class="legend">
+					<h1>The web CHANGES fast!</h1> 
+					<h1>Heres some of my past work...</h1>
+					<p>Still not convinced? Send <a href="mailto:mallorystandridge@gmail.com?Subject=Your%20stie%20is%20totally%20awesome&body=Hi">me</a> a code test. I ain't scared.</p>
+					<hr>
+				</div>
+			</div>
+		</div>
+	
+		<div ng-controller="JobController as employment">			
+   			<div class="row">
+   				<div class="medium-6 columns">
+   					<a ng-href="{{ employment.job[0].link }}" class="case-study">
+   						<img ng-src="{{ employment.job[0].img }}" ng-alt="{{ employment.job[0].atl }}">
+   						<h2>{{ employment.job[0].title }}</h2>
+   					</a>
+   				</div>
+   				<div class="medium-6 columns">
+   					<a ng-href="{{ employment.job[1].link }}" class="case-study">
+   						<img ng-src="{{ employment.job[1].img }}" ng-alt="{{ employment.job[1].atl }}">
+   						<h2>{{ employment.job[1].title }}</h2>
+   					</a>
+   				</div>
+   			</div>
+        	
+   			<div class="row">
+   				<div class="medium-6 columns">
+   					<a ng-href="{{ employment.job[2].link }}" class="case-study">
+   						<img ng-src="{{ employment.job[2].img }}" ng-alt="{{ employment.job[2].atl }}">
+   						<h2>{{ employment.job[2].title }}</h2>
+   					</a>
+   				</div>
+   				<div class="medium-6 columns">
+   					<a ng-href="{{ employment.job[3].link }}" class="case-study">
+   						<img ng-src="{{ employment.job[3].img }}" ng-alt="{{ employment.job[3].atl }}">
+   						<h2>{{ employment.job[3].title }}</h2>
+   					</a>
+   				</div>
+   			</div>
+        	
+   			<div class="row">
+   				<div class="medium-6 columns">
+   					<a ng-href="{{ employment.job[4].link }}" class="case-study">
+   						<img ng-src="{{ employment.job[4].img }}" ng-alt="{{ employment.job[4].atl }}">
+   						<h2>{{ employment.job[4].title }}</h2>
+   					</a>
+   				</div>
+   			</div>
+		</div>
+		
+		<div class="reference">
+			<div class="row">
+				<div class="medium-12 columns">
+					<div class="legend">
+						<h1>A little more about me.</h1> 
+						<hr>
+						<p>My name is Mallory and I have been working as front end developer for a few years now. I have worked for start-ups and ad agencies. I learned a lot in a short amount of time, a few eCommerce platforms and several content management systems. This past year, I have been working remote from my house in Atlanta, GA for this awesome start-up (<a href="#">FyndIt</a>) on their full, custom-built set up. As great of an experience as that was, my contract has ended and I'm looking for something just as cool.</p>
+						<br />
+						<p>To be a little more personal: I have always been a huge Star War fan and have read several Star Wars series. I also really love food and consider myself a serious mac and cheese connoisseur. My favorite TV show is Bob's Burgers, I feel Louise truly understands me.(&#128540; )  I'm not really into sports - but if you are talking about Wii sports, I'm a huge fan! My favorite game is Mario Marker right now, but my all time favorite Wii game is Mario Kart. Any challenges will be accepted and you will be owned. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+   
+		<div class="reference" ng-controller="ReferenceController as reference">
+			<div class="row">
+				<div class="medium-12 columns">
+					<div class="legend">
+						<h1>People who can vouch for me.</h1> 
+						<hr>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="medium-3 small-6 columns">
+					<a ng-href="{{ reference.ref[0].linkedin }}" target="_blank">
+						<img ng-src="{{ reference.ref[0].img }}" alt="{{ reference.ref[0].atl }}">
+					</a>
+					<a class="mail" ng-href="{{ reference.ref[0].email }}">Email - {{ reference.ref[0].name }}</a>
+					<p>{{ reference.ref[0].title }}</p>
+				</div>
+				<div class="medium-3 small-6 columns">
+					<a ng-href="{{ reference.ref[1].linkedin }}" target="_blank">
+						<img ng-src="{{ reference.ref[1].img }}" alt="{{ reference.ref[1].atl }}">
+					</a>
+					<a class="mail" ng-href="{{ reference.ref[1].email }}">Email - {{ reference.ref[1].name }}</a>
+					<p>{{ reference.ref[1].title }}</p>
+				</div>
+				<div class="medium-3 small-6 columns">
+					<a ng-href="{{ reference.ref[2].linkedin }}" target="_blank">
+						<img ng-src="{{ reference.ref[2].img }}" alt="{{ reference.ref[2].atl }}">
+					</a>
+					<a class="mail" ng-href="{{ reference.ref[2].email }}">Email - {{ reference.ref[2].name }}</a>
+					<p>{{ reference.ref[2].title }}</p>
+				</div>
+				<div class="medium-3 small-6 columns">
+					<a ng-href="{{ reference.ref[3].linkedin }}" target="_blank">
+						<img ng-src="{{ reference.ref[3].img }}" alt="{{ reference.ref[3].atl }}">
+					</a>
+					<a class="mail" ng-href="{{ reference.ref[3].email }}">Email - {{ reference.ref[3].name }}</a>
+					<p>{{ reference.ref[3].title }}</p>
+				</div>
+			
+			</div>
+		</div>
+
+	</div><!-- Main -->
+	
+    <footer>
+		<div class="row">
+			<p>Mallory Standridge</p>
+			<p>Web Developer</p>
+			<a href="mailto:mallorystandridge@gmail.com">Contact Me</a>
+		</div>
+	</footer>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+	
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controller/ReferenceController.js"></script>
+    <script src="js/controller/JobController.js"></script>
+	
+	
+  </body>
+</html>

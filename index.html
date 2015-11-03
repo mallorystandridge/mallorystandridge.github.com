@@ -1,0 +1,164 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mallory | Hire Me!</title>
+	<link rel="icon" type="image/png" href="images/fav.png" />
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+	
+	<!-- angular -->
+    <script src="js/vendor/angular.min.js"></script>
+	<script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
+  </head>
+ 
+  <body ng-app="mySite">
+	<header>
+		<div class="row">
+			<div class="logo">
+			  <a href="index.html" class="hire">HIRE<br> ME!</a>
+			  <p class="tag-line">#Imadethat</p>
+			</div>
+			<a id="mobile" href="">Menu</a>
+		  	<ul class="navigation">
+		  		  <li class="nav-list"><a class="nav-link" href="index.html">Home</a></li>
+		  		  <li class="nav-list"><a class="nav-link" href="upto.html">What I've been up to</a></li>
+		  		  <li class="nav-list"><a class="nav-link" href="resume.html">Resume</a></li>
+		  	</ul>  	  			  
+		</div>
+	</header>
+	
+	<div class="main">
+  		<div class="row" ng-controller="MainController">
+  			<div class="medium-7 columns">
+				<div class="title">
+					<h1>{{title}}</h1>
+					<hr>		
+					<img class="main-hero" src="images/its-me.jpg"  alt="Its Me">
+					<hr>		
+				</div>
+				
+				<h3>Websites I View Often</h3>
+				<div ng-controller="SiteController as site">
+					<div class="row">
+						<div class="websites">
+							<div class="small-4 columns">
+								<a ng-href="{{ site.web[0].link }}" target="_blank">
+								<img ng-src="{{ site.web[0].img}}">
+								</a>
+							</div>
+							<div class="small-4 columns">
+								<a ng-href="{{ site.web[1].link }}" target="_blank">
+								<img ng-src="{{ site.web[1].img}}">
+								</a>
+							</div>
+							<div class="small-4 columns">
+								<a ng-href="{{ site.web[2].link }}" target="_blank">
+								<img ng-src="{{ site.web[2].img}}">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="websites">
+							<div class="small-4 columns">
+								<a ng-href="{{ site.web[3].link }}" target="_blank">
+								<img ng-src="{{ site.web[3].img}}">
+								</a>
+							</div>
+							<div class="small-4 columns">
+								<a ng-href="{{ site.web[4].link }}" target="_blank">
+								<img ng-src="{{ site.web[4].img}}">
+								</a>
+							</div>
+							<div class="small-4 columns">
+								<a ng-href="{{ site.web[5].link }}" target="_blank">
+								<img ng-src="{{ site.web[5].img}}">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="websites">
+							<div class="small-4 columns">
+								<a ng-href="{{ site.web[6].link }}" target="_blank">
+								<img ng-src="{{ site.web[6].img}}">
+								</a>
+							</div>
+							<div class="small-4 columns">
+								<a ng-href="{{ site.web[7].link }}" target="_blank">
+								<img ng-src="{{ site.web[7].img}}">
+								</a>
+							</div>
+							<div class="small-4 columns">
+								<a ng-href="{{ site.web[8].link }}" target="_blank">
+								<img ng-src="{{ site.web[8].img}}">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="websites">
+							<div class="small-4 columns">
+								<a ng-href="{{ site.web[9].link }}" target="_blank">
+								<img ng-src="{{ site.web[9].img}}">
+								</a>
+							</div>
+							<div class="small-4 columns">
+								<a ng-href="{{ site.web[10].link }}" target="_blank">
+								<img ng-src="{{ site.web[10].img}}">
+								</a>
+							</div>
+							<div class="small-4 columns">
+								<a ng-href="{{ site.web[11].link }}" target="_blank">
+								<img ng-src="{{ site.web[11].img}}"s>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div><!-- /site controller -->
+				<hr>
+			</div><!-- /7 column -->
+			
+  			<div class="medium-4 columns">
+				<h3>My Stats</h3>
+				<ul class="my-stats" >
+					<li ng-repeat="stat in stats">{{stat.number}}<span>{{stat.name}}</span></li>
+				</ul>
+    	
+				<div class="testimonial">
+					<h3>Testimonials</h3>
+					<div ng-repeat="testimonial in testimonials">
+						<blockquote cite="{{testimonial.cite}}">
+							{{testimonial.comment}}
+						</blockquote>
+						<p class="signature">{{testimonial.author}} <br> {{testimonial.position}}</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+	</div><!-- /Main -->
+	
+    <footer>
+		<div class="row">
+			<p>Mallory Standridge</p>
+			<p>Web Developer</p>
+			<a href="mailto:mallorystandridge@gmail.com">Contact Me</a>
+		</div>
+	</footer>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controller/MainController.js"></script>
+    <script src="js/controller/SiteController.js"></script>
+	
+  </body>
+</html>
