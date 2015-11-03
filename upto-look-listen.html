@@ -6,10 +6,11 @@
     <title>Mallory | Hire Me!</title>
 	<link rel="icon" type="image/png" href="images/fav.png" />
     <link rel="stylesheet" href="css/app.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
+	<script src="js/vendor/modernizr.js" type="text/javascript"></script>
 	
 	<!-- angular -->
     <script src="js/vendor/angular.min.js"></script>
+	<script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
   </head>
  
   <body ng-app="mySite">
@@ -19,10 +20,11 @@
 			  <a href="index.html" class="hire">HIRE<br> ME!</a>
 			  <p class="tag-line">#Imadethat</p>
 			</div>
+			<a id="mobile" href="">Menu</a>
 		  	<ul class="navigation">
-		  		  <li><a href="index.html">Home</a></li>
-		  		  <li><a href="upto.html">What I've been up to</a></li>
-		  		  <li><a href="resume.html">Resume</a></li>
+		  		  <li class="nav-list"><a class="nav-link" href="index.html">Home</a></li>
+		  		  <li class="nav-list"><a class="nav-link" href="upto.html">What I've been up to</a></li>
+		  		  <li class="nav-list"><a class="nav-link" href="resume.html">Resume</a></li>
 		  	</ul>  	  			  
 		</div>
 	</header>
@@ -78,8 +80,8 @@
 		</div>
 	</footer>
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
+	<script src="js/vendor/foundation/js/foundation.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/vendor/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	
     <!-- Modules -->
     <script src="js/app.js"></script>
